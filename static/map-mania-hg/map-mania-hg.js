@@ -7,4 +7,21 @@ var gMap;
 function initMap() {
     gMap = new google.maps.Map(document.getElementById("myMapID"), {
       center: { lat: 41.878, lng: 10 }, zoom: 3});
-    }
+    // again used 'idle' in place of bounds, note, removed marker dont think it is a requirment
+    google.maps.event.addListener(gMap, 'idle', function() {
+      updateLocation()
+  });
+}
+
+function updateLocation() {
+  console.log('function UpdateGame()');
+  var zoomLevel = gMap.getZoom()
+  var inBounds = false;
+  
+  // Check if Vancouver is in the currently displayed map
+  if (gMap.getBounds().contains({lat:49.2827,lng:-123.1207})) {
+  inBounds = true;
+  }
+  
+  console.log("inBounds:"+inBounds+" zoomLevel:"+zoomLevel);
+  }    
