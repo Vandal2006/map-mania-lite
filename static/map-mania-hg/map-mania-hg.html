@@ -13,9 +13,24 @@
     <title>Map Mania</title>
     <link rel="stylesheet" href="map-mania-hg.css">
     <script src="map-mania-hg.js"></script>
+    <style>
+        #myMapID{
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Henry Gilson map mania</h1>
+    <div id="myMapID"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfzvjoRsmjWVSIR7cxQRbpKqfkzY3469w&callback=initMap"
+    async defer>
+    </script>
     
 </body>
 </html>
