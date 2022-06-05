@@ -14,7 +14,7 @@ function initMap() {
 }
 
 function updateLocation() {
-  console.log('function UpdateGame()');
+  console.log('function updateLocation()');
   var zoomLevel = gMap.getZoom()
   var inBounds = false;
   

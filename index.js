@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express')
 app = express()
 
@@ -114,10 +115,10 @@ var spiderMan = {
 	]
 }
 
-app.get('/batman', (request, response) => {
-	console.log('Calling "/batman" on the Node.js server.')
+app.get('/favorite-Locations', (request, response) => {
+	console.log('Calling "/favorite-Locations" on the Node.js server.')
 	response.type('application/json')
-	response.send(JSON.stringify(spiderMan, null, 4))
+	response.send(JSON.stringify(favoriteLocations, null, 4))
 })
 
 // Custom 404 page.
@@ -139,3 +140,16 @@ app.listen(port, () => console.log(
   `Express started at \"http://localhost:${port}\"\n` +
   `press Ctrl-C to terminate.`)
 )
+
+var favoriteLocations = [
+    {"content":"Vancouver, Canada", "coordinates":{"lat":49.2827,"lng":-123.1207}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Roatan, Honduras", "coordinates":{"lat":16.3298,"lng":-86.5300}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Chicago, Il", "coordinates":{"lat":41.8781,"lng":-87.6298}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Jasper, Canada", "coordinates":{"lat":52.8737,"lng":-118.0814}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Copan, Honduras", "coordinates":{"lat":33.6891,"lng":-78.8867}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Seattle, Wa", "coordinates":{"lat":47.6062,"lng":-122.3321}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Vancouver Island, Canada", "coordinates":{"lat":49.6506,"lng":-125.4494}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Tegucigalpa , Honduras", "coordinates":{"lat":14.0650,"lng":-87.1715}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Boston, Ma", "coordinates":{"lat":42.3601,"lng":-71.0589}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Lancaster, NH", "coordinates":{"lat":44.4889,"lng":-71.5692}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"}
+]; 
