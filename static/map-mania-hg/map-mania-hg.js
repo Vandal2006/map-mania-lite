@@ -5,6 +5,7 @@ var gMap;
 
 
 function initMap() {
+
     gMap = new google.maps.Map(document.getElementById("myMapID"), {
       center: { lat: 41.878, lng: 10 }, zoom: 3});
     // again used 'idle' in place of bounds, note, removed marker dont think it is a requirment
