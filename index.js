@@ -142,9 +142,16 @@ app.listen(port, () => console.log(
 )
 
 var favoriteLocations = [
-    {"content":"Vancouver, Canada", "coordinates":{"lat":49.2827,"lng":-123.1207}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
-    {"content":"Roatan, Honduras", "coordinates":{"lat":16.3298,"lng":-86.5300}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
-    {"content":"Chicago, Il", "coordinates":{"lat":41.8781,"lng":-87.6298}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Vancouver, Canada", 
+	"coordinates":{"lat":49.2827,"lng":-123.1207}, 
+	"iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Roatan, Honduras", 
+	"coordinates":{"lat":16.3298,"lng":-86.5300}, 
+	"iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
+    {"content":"Chicago, Il", 
+	"coordinates":{"lat":41.8781,"lng":-87.6298}, 
+	"iconImagePath":
+	"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
     {"content":"Jasper, Canada", "coordinates":{"lat":52.8737,"lng":-118.0814}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
     {"content":"Copan, Honduras", "coordinates":{"lat":33.6891,"lng":-78.8867}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
     {"content":"Seattle, Wa", "coordinates":{"lat":47.6062,"lng":-122.3321}, "iconImagePath":"https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png"},
