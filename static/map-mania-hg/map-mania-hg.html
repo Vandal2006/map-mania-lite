@@ -27,19 +27,23 @@
 </head>
 <body>
     <h1>Henry Gilson map mania (in progress)</h1>
-    <button id="open">Instructions
+    <button id="myBtn">instruction</button>
 
-    </button>
-    <div class="modal_container"
-    id="modal_container">
-        <div class="modal">
-            <h2>How to play</h2>
-      <p>place holer Instructions</p>
-        <button id="close">
-            close me
-        </button>
-        </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>instruction place holder</p>
+      </div>
+    
     </div>
+<button type="button" onclick="document.getElementById('hint').style.display='block'">Hint</button>
+<p id="hint" style="display:none">Its the home of the canucks!</p>
+<button ondblclick="cheatFunction()">Double-click to cheat</button>
+
+<p id="cheatMode"></p>
     <div id="myMapID"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfzvjoRsmjWVSIR7cxQRbpKqfkzY3469w&callback=initMap"
     async defer>
